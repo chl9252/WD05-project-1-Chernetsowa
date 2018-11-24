@@ -7,7 +7,11 @@ block variables
 block content
 	.sticky-footer-wrapper
 		.sticky-footer-content
-			
 			include ../sections/header.pug
+			.container.content-padding
+				.row
+					.col-10.offset-1
+						include ../sections/blog-post
+						include ../sections/form-comment.pug
 	
 		include ../sections/footer.pug
